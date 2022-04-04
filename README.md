@@ -9,8 +9,8 @@
 - However, recent films created by Pixar and Disney are unrivaled in the Oscar's prize race. 
 - Overall, there are more films nominated by outside Disney/Pixar, but Disney/Pixar films tend to win a larger percentage of the awards!
 
-![](https://giphy.com/gifs/regalmovies-encanto-thanks-i-guess-uhh-HG6FHWzOJQiWvNTPjh)
 
+![Alt Text](https://i.pinimg.com/originals/7e/7b/4c/7e7b4cc62e238c6bab73bccdfa37e428.gif)
 
 ## What I did with which skill
 - Python (pandas, beautifulsoup, Selenium):for data analysis
