@@ -21,6 +21,7 @@
 
 ## Files
 - ```nomination_new.csv```is a data I scraped with python and manually cleaned. This is the main dataset I used in the [article](https://naokatoh.github.io/oscar-anime/)
+- '''result.xlsx''' includes the results of the awards.
 
 
 ## Reference
