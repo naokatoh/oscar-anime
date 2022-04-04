@@ -7,7 +7,9 @@
 - The first film ever won the award was "Shrek" created by DreamWorks Animation.
 - The award used to won by diverse productions including non-Western animation studios such as Studio Ghibli in Japan.
 - However, recent films created by Pixar and Disney are unrivaled in the Oscar's prize race. 
-- Overall, there are more films nominated by outside Disney/Pixar, but Disney/Pixar films tend to win a larger percentage of the awards 
+- Overall, there are more films nominated by outside Disney/Pixar, but Disney/Pixar films tend to win a larger percentage of the awards!
+
+[via GIPHY](https://giphy.com/gifs/regalmovies-encanto-thanks-i-guess-uhh-HG6FHWzOJQiWvNTPjh)
 
 
 ## What I did with which skill
