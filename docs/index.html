@@ -1098,12 +1098,12 @@
                 </p>
             <p>Disney/ Pixar dominated even in nomination, with three of the five nominated films at this year's Academy Awards coming from the two studios. While other studios are limited in the number of films they can produce in a year, Disney/Pixar releases several major films each year.</p>
 
-			<p>However, the homogeneity of the winners by no means implies that other studios are inferior. A film production company <a href="https://lesarmateurs-lesite.fr/en/">Les Armateurs</a> put out excellent and artistic films, including two nominations <span class="rb-marker js-markerScrollAnimation">The Triplets of Belleville</span>
+			<!-- <p>However, the homogeneity of the winners by no means implies that other studios are inferior. A film production company <a href="https://lesarmateurs-lesite.fr/en/">Les Armateurs</a> put out excellent and artistic films, including two nominations <span class="rb-marker js-markerScrollAnimation">The Triplets of Belleville</span>
 				 (2003) and <span class="rb-marker js-markerScrollAnimation">The Secret of Kells</span>
 				 (2009). An Irish animation film studio, <a href="https://www.cartoonsaloon.ie/">Cartoon Saloon</a>, has been nominated three times for its delicate 2D animated films that remind us of the beauty of the Emerald Isle, including <span class="rb-marker js-markerScrollAnimation">Song of the Sea</span>
 				 (2014), <span class="rb-marker js-markerScrollAnimation">The Breadwinner</span>
 				 (2017), and <span class="rb-marker js-markerScrollAnimation">Wolfwalkers</span>
-				 (2020). </p>
+				 (2020). </p> -->
           </div>
         </div>
       </section>
@@ -1117,9 +1117,9 @@
 
       function hideNote() {
         // annotation: #2005, #2010, #2015, #text-2
-        d3.select("[data-name='2005']").classed('hidden', true)
-        d3.select("[data-name='2010']").classed('hidden', true)
-        d3.select("[data-name='2015']").classed('hidden', true)
+        d3.selectAll("[data-name='2005']").classed('hidden', true)
+        d3.selectAll("[data-name='2010']").classed('hidden', true)
+        d3.selectAll("[data-name='2015']").classed('hidden', true)
       }
       
       /* Scrollytelling code goes under here */
@@ -1135,10 +1135,10 @@
       d3.select("#step-one").on('stepin', function(e) {
         console.log("Got to step one")
         // undo changes from step two
-        d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
+        // d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
 
         // do changes for step one
-        d3.select("[data-name='2005']").classed('hidden', false)
+        d3.selectAll("[data-name='2005']").classed('hidden', false)
       })
 
       d3.select("#step-two").on('stepin', function(e) {
@@ -1148,15 +1148,15 @@
 
         // do changes for step two
         console.log("Got to step two")
-        d3.select("[data-name='2005']").classed('hidden', false)
-        d3.select("[data-name='2010']").classed('hidden', false)
+        d3.selectAll("[data-name='2005']").classed('hidden', false)
+        d3.selectAll("[data-name='2010']").classed('hidden', false)
       })
 
       d3.select("#step-three").on('stepin', function(e) {
         // undo changes from step two
-        d3.select("[data-name='2005']").classed('hidden', false)
-        d3.select("[data-name='2010']").classed('hidden', false)
-        d3.select("[data-name='2015']").classed('hidden', false)
+        d3.selectAll("[data-name='2005']").classed('hidden', false)
+        d3.selectAll("[data-name='2010']").classed('hidden', false)
+        d3.selectAll("[data-name='2015']").classed('hidden', false)
       })
 
 
