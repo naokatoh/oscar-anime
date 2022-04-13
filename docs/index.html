@@ -1173,6 +1173,8 @@
       hideNote()
 
       d3.select("#step-one").on('stepin', function(e) {
+		hideNote()
+
         if(e.detail.direction === 'up') {
           // undo the changes from step one
           hideNote()
@@ -1180,9 +1182,10 @@
       })
 
       d3.select("#step-one").on('stepin', function(e) {
+		hideNote()
         console.log("Got to step one")
         // undo changes from step two
-        // d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
+    // d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
 
         // do changes for step one
         d3.selectAll("[data-name='2005']").classed('hidden', false)
