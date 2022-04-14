@@ -1163,7 +1163,7 @@
     <script>
 
       function hideNote() {
-        // annotation: #2005, #2010, #2015, #text-2
+        // annotation: #2005, #2010, #2015
         d3.selectAll("[data-name='2005']").classed('hidden', true)
         d3.selectAll("[data-name='2010']").classed('hidden', true)
         d3.selectAll("[data-name='2015']").classed('hidden', true)
@@ -1172,8 +1172,8 @@
       /* Scrollytelling code goes under here */
       hideNote()
 
-      d3.select("#step-one").on('stepin', function(e) {
-		hideNote()
+      d3.select("#step-one").on('stepout', function(e) {
+		
 
         if(e.detail.direction === 'up') {
           // undo the changes from step one
@@ -1182,12 +1182,13 @@
       })
 
       d3.select("#step-one").on('stepin', function(e) {
-		hideNote()
-        console.log("Got to step one")
+		
+      
         // undo changes from step two
-    // d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
+		hideNote()
 
         // do changes for step one
+		console.log("Got to step one")
         d3.selectAll("[data-name='2005']").classed('hidden', false)
       })
 
@@ -1204,6 +1205,9 @@
 
       d3.select("#step-three").on('stepin', function(e) {
         // undo changes from step two
+		hideNote()
+
+		console.log("Got to step three")
         d3.selectAll("[data-name='2005']").classed('hidden', false)
         d3.selectAll("[data-name='2010']").classed('hidden', false)
         d3.selectAll("[data-name='2015']").classed('hidden', false)
